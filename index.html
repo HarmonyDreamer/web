@@ -6,8 +6,7 @@
     <link href="./images/style.css" rel="stylesheet">
     <script type="text/javascript" src="./images/jquery.mlens-1.0.min.js"></script>
     <script type="text/javascript" src="./images/jquery.js"></script>
-
-
+    
     <style>
         p.serif {
             font-family: "Times New Roman", Times, serif;
@@ -16,22 +15,49 @@
         p.sansserif {
             font-family: Arial, Helvetica, sans-serif;
         }
+        .thick-line{
+           width:100%;
+           height: 3px;
+           background-color: black;
+        }
+        .thick-line1{
+            width:100%;
+            height: 1px;
+            background-color: black;
+         }
+        .height-line{
+            width:100%;
+            height: 60px;
+            background-color:white;
+         }
     </style>
 
     <style>
+        .box25 {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            width:24.5%;
+       }
         .box33 {
-            display:inline-block;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
             width:33%;
        }
 
        .box50 {
         display:inline-block;
+        vertical-align: middle;
+        text-align: center;
         width:49%;
        }
 
        .box100 {
         display:inline-block;
-        width:100%;
+        vertical-align: middle;
+        text-align: center;
+        width:99%;
        }
     </style>
 
@@ -40,187 +66,256 @@
 <body>
     <div class="content">
         <div id="" >
+            <div class="height-line"></div>
+            <div class="thick-line"></div>
             <div class="box100", style="text-align:center;"> 
-                <span style="text-align:center;"><h1><strong>Rectifying and Harmonizing Dynamic Objects with Backgrounds for 4D Video</strong></h1></span>
-                <span style="text-align:center;"><h1><strong>Generation via Inversion Scores</strong>&nbsp;<small>(***************)</small></h1></span>
+                <span><h1><strong>HarmonyDreamer:&nbsp;&nbsp; Rectifying and Harmonizing</strong></h1></span>
+                <span><h1><strong>Dynamic Objects with Backgrounds for 4D Video</strong></h1></span>
+                <span><h1><strong>Generation via Inversion Scores</strong></h1></span>
             </div>
+             <div class="thick-line1"></div><br><br>
+            <div class="box100", style="text-align:center;">   
+                <span style="font-size: 1.2em;text-align:center;"><strong>Anonymous Author(s)</strong></span><br>
+                <span style="font-size: 1.2em;text-align:center;">Affiliation</span><br>
+                <span style="font-size: 1.2em;text-align:center;">Address</span><br>
+                <span style="font-size: 1.2em;text-align:center;">email</span><br><br>
+            </div> 
         </div>
+        
         <div id="">
-            <div class="box100", style="text-align:center;">
-                <p id="authors" class="serif">
-                    <a style="text-align:left; font-size: 0.7em;", href="https://nn111000.github.io/web">name0<sup>1</sup></a>
-                    <a style="text-align:left; font-size: 0.7em;",href="">name1<sup>2<dag></sup></a>
-                    <a style="text-align:left; font-size: 0.7em;",href="">name2<sup>3</sup></a>
-                    <a style="text-align:left; font-size: 0.7em;",href="">name3<sup>2</sup></a>
-                    <a style="text-align:left; font-size: 0.7em;",href="">name4<sup>2</sup></a>
-                    <a style="text-align:left; font-size: 0.7em;",href="https://nn111000.github.io/web">name1<sup>2</sup></a>
-                    <a style="text-align:left; font-size: 0.7em;",href="">Jianan Shi<sup>3</sup></a>
-                    <a style="text-align:left; font-size: 0.7em;",href="https://nn111000.github.io/web">name2<sup>1,2</sup></a>
-                    <a style="text-align:left; font-size: 0.7em;",href="https://nn111000.github.io/web">name3<sup>1</sup></a>
-                    <br>
-                    <a style="text-align:left; font-size: 0.7em;",style="font-size: 0.7em"><sup>12</sup>Corresponding Author.</a>
-                    <br>
-                    <span style="font-size: 0.7em; margin-top: 0.7em">
-                        <a><sup>1</sup>************</a>
-                        <a><sup>2</sup>************</a>
-                        <a><sup>3</sup>************</a>
-                    </span>
-                </p>
-            </div>
-        </div>
-   
-
-        <div id="">
-            <div class="box100", style="text-align:center;">    
-            <font size="+1">
-                <p style="text-align: center;" class="serif">
-                    <a href="https://nn111000.github.io/web" target="_blank"
-                        style="font-weight: bold;">[Paper]</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="https://nn111000.github.io/web" target="_blank"
-                        style="font-weight: bold;">[Github]</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="#bibtex" style="font-weight: bold;">[BibTeX]</a>
-                </p><br>
-            </font>
-            </div>
-        </div>
-   
-        <div id="">
-            <div class="box100", style="font-size: 1.2em;text-align:left;">
+            <div class="box100", style="font-size: 1.2em; text-align:center;">
             <!-- abstract -->
-            <p> <h1>Abstract</h1><br> 
-            ********************************************************************************************************************
-            ********************************************************************************************************************
-            ********************************************************************************************************************
-            ********************************************************************************************************************
-            ********************************************************************************************************************
-            ********************************************************************************************************************
-            ********************************************************************************************************************
-            ********************************************************************************************************************
+                <span style="font-size: 1.2em;text-align:center;"><strong>Abstract</strong></span>
+            </div>
+            <div class="box100", style="display:inline-block; font-size: 1.2em; text-align: justify;">
+            <p style="margin-left: 1cm; margin-right:1.0cm;font-weight:bold; text-align:justify;">
+            Recent advancements in score distillation have markedly enhanced the generation of both static and dynamic 3D tasks by effectively harnessing the power of 2D pretrained diffusion models for artistic applications. However, traditional distillation methods primarily concentrate on object-centric representations without adequately addressing the integration of objects with their backgrounds, which includes matching rendering styles, shadows, and motion. This paper presents a new framework that incorporates a background-enhanced distillation score along with an iterative editing-reconstruction process tailored for 4D video generation from basic dynamic 4D Gaussian splatting. Our experiments demonstrate that our method not only excels in producing high-fidelity 4D videos that harmoniously blend objects with varied backgrounds, but also facilitates the creation of multiview videos. Additionally, our approach outperforms existing baselines in both spatiotemporal and semantic consistency, demonstrating its effectives in 4D video generation.
             </p>
             </div>
         </div>  
     </div>
-        
     <div class="content">
+        <!-- abstract -->
         <div id="">
-            <div class="box100", style="text-align:center;">
-            <p class="title is-3 mt-5 has-text-centered",style="text-align: centre;"> <h1>Result</h1> </p>
+           <div class="box100", style="line-height:20px;text-align:center;">
+               <span style="font-size: 1.2em;text-align:center;">&nbsp;</span>
+           </div>
+       </div>
+       <div id="">
+           <div class="box100", style="line-height:20px;text-align:center;">
+               <span><h3><strong>Figure : hidden semantics</strong></h3></span>
+           </div>
+       </div>
+       <div id="">
+           <div id="">
+                <div class="box25", style="text-align:center;">
+                   <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
+                   <img class="status3-pic" src="./images/robotsand/a1.gif" style="width:100%; height:30%">
+                </div>
+                <div class="box25", style="text-align:center;">
+                   <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
+                   <img class="status3-pic" src="./images/robotsand/a2.gif" style="width:100%; height:30%">
+                </div>
+                <div class="box25", style="text-align:center;">
+                   <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
+                   <img class="status3-pic" src="./images/robotsand/a3.gif" style="width:100%; height:30%">
+                </div>
+                <div class="box25", style="text-align:center;">
+                    <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
+                    <img class="status3-pic" src="./images/robotsand/a4.gif" style="width:100%; height:30%">
+                </div>
             </div>
         </div>
         <div id="">
-            <div class="box50", style="text-align:center;">
-                <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
-                <img class="status3-pic" src="./images/a.gif" style="width:100%; height:49%">
+            <div class="box25", style="text-align:center;">
+               <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
+               <img class="status3-pic" src="./images/waterrobot/a1.gif" style="width:100%; height:30%">
             </div>
-            <div class="box50", style="text-align:center;">
-                <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
-                <img class="status3-pic" src="./images/a.gif" style="width:100%; height:49%">
+            <div class="box25", style="text-align:center;">
+               <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
+               <img class="status3-pic" src="./images/waterrobot/a2.gif" style="width:100%; height:30%">
             </div>
-        </div>
-        <div id="">
-            <div class="box50", style="text-align:center;">
-                <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
-                <img class="status3-pic" src="./images/a.gif" style="width:100%; height:49%">
-                
+            <div class="box25", style="text-align:center;">
+               <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
+               <img class="status3-pic" src="./images/waterrobot/a3.gif" style="width:100%; height:30%">
             </div>
-            <div class="box50", style="text-align:center;">
+            <div class="box25", style="text-align:center;">
                 <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
-                <img class="status3-pic" src="./images/a.gif" style="width:100%; height:49%">
-                
+                <img class="status3-pic" src="./images/waterrobot/a4.gif" style="width:100%; height:30%">
             </div>
         </div>
 
+        <div id="">
+           <div class="box25", style="text-align:center;">
+               <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
+               <img class="status3-pic" src="./images/raisehead_/a1.gif" style="width:100%; height:30%">
+           </div>
+           <div class="box25", style="text-align:center;">
+               <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
+               <img class="status3-pic" src="./images/raisehead_/a2.gif" style="width:100%; height:30%">
+           </div>
+           <div class="box25", style="text-align:center;">
+               <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
+               <img class="status3-pic" src="./images/raisehead_/a3.gif" style="width:100%; height:30%">
+           </div>
+           <div class="box25", style="text-align:center;">
+                 <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
+                <img class="status3-pic" src="./images/raisehead_/a4.gif" style="width:100%; height:30%">
+        </div>
+       </div>
+       <div id="">
+           <div class="box25", style="text-align:center;">
+               <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
+               <img class="status3-pic" src="./images/raisehead/a1.gif" style="width:100%; height:30%">
+           </div>
+           <div class="box25", style="text-align:center;">
+               <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
+               <img class="status3-pic" src="./images/raisehead/a2.gif" style="width:100%; height:30%">
+           </div>
+           <div class="box25", style="text-align:center;">
+               <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
+               <img class="status3-pic" src="./images/raisehead/a3.gif" style="width:100%; height:30%">
+           </div>
+           <div class="box25", style="text-align:center;">
+                <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
+                <img class="status3-pic" src="./images/raisehead/a4.gif" style="width:100%; height:30%">
+        </div>
+
+       </div>
     </div>
 
+    <div class="content">
+        <!-- abstract -->
+        <div id="">
+           <div class="box100", style="line-height:20px;text-align:center;">
+               <span style="font-size: 1.2em;text-align:center;">&nbsp;</span>
+           </div>
+        </div>
+
+        <div id="">
+            <div class="box100", style="line-height:20px;text-align:center;">
+               <span><h3><strong>Figure : Four Backgrounds as Inversion Scores of 4D Harmonization:</strong></h3></span>
+            </div>
+        </div>
+       
+        <div id="">
+            <div class="box25", style="text-align:center;">
+                <div style="line-height:40px; border: 1px solid; text-align:center;">Sand as Background</div>
+                <img class="status3-pic" src="./images/sandinv/a1.gif" style="width:100%; height:30%">
+            </div>
+            <div class="box25", style="text-align:center;">
+                <div style="line-height:40px; border: 1px solid; text-align:center;">Sand as Background</div>
+                <img class="status3-pic" src="./images/sandinv/a2.gif" style="width:100%; height:30%">
+            </div>
+     
+            <div class="box25", style="text-align:center;">
+                <div style="line-height:40px; border: 1px solid; text-align:center;">Sand as Background</div>
+                <img class="status3-pic" src="./images/sandinv/a3.gif" style="width:100%; height:30%">
+            </div>
+            <div class="box25", style="text-align:center;">
+                <div style="line-height:40px; border: 1px solid; text-align:center;">Sand as Background</div>
+                <img class="status3-pic" src="./images/sandinv/a4.gif" style="width:100%; height:30%">
+            </div>
+        </div>
+        <div id="">
+            <div class="box25", style="text-align:center;">
+                <div style="line-height:40px; border: 1px solid; text-align:center;">Water as Background</div>
+                <img class="status3-pic" src="./images/waterrobotinv/a1.gif" style="width:100%; height:30%">
+            </div>
+            <div class="box25", style="text-align:center;">
+                <div style="line-height:40px; border: 1px solid; text-align:center;">Water as Background</div>
+                <img class="status3-pic" src="./images/waterrobotinv/a2.gif" style="width:100%; height:30%">
+            </div>
+    
+            <div class="box25", style="text-align:center;">
+                <div style="line-height:40px; border: 1px solid; text-align:center;">Water as Background</div>
+                <img class="status3-pic" src="./images/waterrobotinv/a3.gif" style="width:100%; height:30%">
+            </div>
+            <div class="box25", style="text-align:center;">
+                <div style="line-height:40px; border: 1px solid; text-align:center;">Water as Background</div>
+                <img class="status3-pic" src="./images/waterrobotinv/a4.gif" style="width:100%; height:30%">
+            </div>
+        </div>
+        <div id="">
+            <div class="box25", style="text-align:center;">
+                <div style="line-height:40px; border: 1px solid; text-align:center;">Moon as Background</div>
+                <img class="status3-pic" src="./images/mooninv/a1.gif" style="width:100%; height:30%">
+            </div>
+            <div class="box25", style="text-align:center;">
+                <div style="line-height:40px; border: 1px solid; text-align:center;">Moon as Background</div>
+                <img class="status3-pic" src="./images/mooninv/a2.gif" style="width:100%; height:30%">
+            </div>
+
+            <div class="box25", style="text-align:center;">
+                <div style="line-height:40px; border: 1px solid; text-align:center;">Moon as Background</div>
+                <img class="status3-pic" src="./images/mooninv/a3.gif" style="width:100%; height:30%">
+            </div>
+            <div class="box25", style="text-align:center;">
+                <div style="line-height:40px; border: 1px solid; text-align:center;">Moon as Background</div>
+                <img class="status3-pic" src="./images/mooninv/a4.gif" style="width:100%; height:30%">
+            </div>
+
+        </div>
+        <div id="">
+            <div class="box25", style="text-align:center;">
+                <div style="line-height:40px; border: 1px solid; text-align:center;">Sky as Background</div>
+                <img class="status3-pic" src="./images/raiseheadinv/a1.gif" style="width:100%; height:30%">
+            </div>
+            <div class="box25", style="text-align:center;">
+                <div style="line-height:40px; border: 1px solid; text-align:center;">Sky as Background</div>
+                <img class="status3-pic" src="./images/raiseheadinv/a2.gif" style="width:100%; height:30%">
+            </div>
+
+            <div class="box25", style="text-align:center;">
+                <div style="line-height:40px; border: 1px solid; text-align:center;">Sky as Background</div>
+                <img class="status3-pic" src="./images/raiseheadinv/a3.gif" style="width:100%; height:30%">
+            </div>
+            <div class="box25", style="text-align:center;">
+                <div style="line-height:40px; border: 1px solid; text-align:center;">Sky as Background</div>
+                <img class="status3-pic" src="./images/raiseheadinv/a4.gif" style="width:100%; height:30%">
+            </div>
+        </div>
+   </div>
 
     <div class="content">
+        <!-- abstract -->
         <div id="">
-            <div class="box100", style="text-align:center;">
-            <!-- abstract -->
-            <p class="title is-3 mt-5 has-text-centered",style="text-align: centre;"> <h1>Result Detail</h1> </p>
+           <div class="box100", style="line-height:20px;text-align:center;">
+               <span style="font-size: 1.2em;text-align:center;">&nbsp;</span>
+           </div>
+       </div>
+       <div id="">
+           <div class="box100", style="line-height:20px;text-align:center;">
+               <span><h3><strong>Figure : Harmonization of 4D Video Generation</strong></h3></span>
+           </div>
+       </div>
+       <div id="">
+            <div class="box25", style="text-align:center;">
+                <div style="line-height:40px; border: 1px solid; text-align:center;">flowers of 4D </div>
+                <img class="status3-pic" src="./images/flowers/a1.gif" style="width:100%; height:30%">
             </div>
-        </div>
-
-        <div id="">
-            <div class="box33", style="text-align:center;">
-                <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
-                <img class="status3-pic" src="./images/a.gif" style="width:100%; height:33%">
-            
+            <div class="box25", style="text-align:center;">
+                <div style="line-height:40px; border: 1px solid; text-align:center;">flowers of 4D</div>
+                <img class="status3-pic" src="./images/flowers/a2.gif" style="width:100%; height:30%">
             </div>
-            <div class="box33">
-                <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
-                <img class="status3-pic" src="./images/a.gif" style="width:100%; height:33%">
-                
+            <div class="box25", style="text-align:center;">
+                <div style="line-height:40px; border: 1px solid; text-align:center;">flowers of 4D </div>
+                <img class="status3-pic" src="./images/flowers/a3.gif" style="width:100%; height:30%">
             </div>
-            <div class="box33", style="text-align:center;">
-                <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
-                <img class="status3-pic" src="./images/a.gif" style="width:100%; height:33%">
-                
+            <div class="box25", style="text-align:center;">
+                <div style="line-height:40px; border: 1px solid; text-align:center;">flowers of 4D</div>
+                <img class="status3-pic" src="./images/flowers/a4.gif" style="width:100%; height:30%">
             </div>
-        </div>
-        <div id="">
-            <div class="box33", style="text-align:center;">
-                <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
-                <img class="status3-pic" src="./images/a.gif" style="width:100%; height:33%">
-            
-            </div>
-            <div class="box33">
-                <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
-                <img class="status3-pic" src="./images/a.gif" style="width:100%; height:33%">
-                
-            </div>
-            <div class="box33", style="text-align:center;">
-                <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
-                <img class="status3-pic" src="./images/a.gif" style="width:100%; height:33%">
-                
-            </div>
-        </div>
-        <div id="">
-            <div class="box33", style="text-align:center;">
-                <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
-                <img class="status3-pic" src="./images/a.gif" style="width:100%; height:33%">
-            
-            </div>
-            <div class="box33">
-                <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
-                <img class="status3-pic" src="./images/a.gif" style="width:100%; height:33%">
-                
-            </div>
-            <div class="box33", style="text-align:center;">
-                <div style="line-height:40px; border: 1px solid; text-align:center;">11111</div>
-                <img class="status3-pic" src="./images/a.gif" style="width:100%; height:33%">
-                
-            </div>
-        </div>
+       </div>
     </div>
 
-
-    <div class="content">
-        <div id="">
-            <div class="box100", style="text-align:center;">
-            <!-- abstract -->
-            <p class="title is-3 mt-5 has-text-centered",style="text-align: centre;"> <h1>Methodology</h1> </p>
-            </div>
-        </div>
-        <div id="">
-            <div class="box100", style="text-align:center;"> 
-            <p style="text-align: left; font-size: 18px; margin: 10px;" class="serif">     
-            *********************************************************************************************************
-            *********************************************************************************************************
-            *********************************************************************************************************
-            *********************************************************************************************************
-            </p>
-            </div>
-        </div> 
-    </div>    
-        
     <div class="content">
         <div id="">
             <div class="box100", style="text-align:center;">
             <p style="text-align: left; font-size: 18px; margin: 10px;" class="serif">
                 Generated with these models:
-                <a href="https://github.com/Stability-AI/generative-models">Stability-AI&nbsp;</a>
-                <a href="https://arxiv.org/abs/2302.05543"> lllyasviel/Lvmin Zhang</a>
+                <a href="https://github.com/Stability-AI/generative-models">SVD/Stability-AI&nbsp;</a>
+                <a href="https://arxiv.org/abs/2302.05543"> lllyasviel/Lvmin Zhang&nbsp;</a>
                 <a href="https://i2vgen-xl.github.io"> I2VGen-XL/Alibaba Group&nbsp;</a>
                 <a href="https://huggingface.co/spaces/shariqfarooq/ZoeDepth">ZoeDepth</a>
             </p>
